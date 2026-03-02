@@ -1,0 +1,28 @@
+#!/bin/bash
+
+DAY=$(date +%u)
+NOW=$(date +%H%M)
+
+# Salı 13:20–14:50
+if [[ $DAY -eq 2 && $NOW -ge 1320 && $NOW -le 1450 ]]; then
+    sleep 300
+    /sbin/shutdown -h now
+fi
+
+# Çarşamba 09:25–10:55
+if [[ $DAY -eq 3 && $NOW -ge 925 && $NOW -le 1055 ]]; then
+    sleep 300
+    /sbin/shutdown -h now
+fi
+
+# Perşembe 11:05–12:35
+if [[ $DAY -eq 4 && $NOW -ge 1105 && $NOW -le 1235 ]]; then
+    sleep 300
+    /sbin/shutdown -h now
+fi
+
+# Cuma 09:25–10:55
+if [[ $DAY -eq 5 && $NOW -ge 925 && $NOW -le 1055 ]]; then
+    sleep 300
+    /sbin/shutdown -h now
+fi
