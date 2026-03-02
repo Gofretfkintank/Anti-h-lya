@@ -1,0 +1,13 @@
+sudo nano /etc/systemd/system/guardian.service
+
+//içine 
+
+[Unit]
+Description=Guardian Shutdown Control
+
+[Service]
+ExecStart=/usr/local/bin/guardian.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
