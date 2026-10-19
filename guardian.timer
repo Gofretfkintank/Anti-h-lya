@@ -1,0 +1,15 @@
+[Unit]
+Description=Guardian weekday timer template
+
+[Timer]
+# Choose approved times, then uncomment relevant lines.
+# OnCalendar=Mon *-*-* 16:00:00
+# OnCalendar=Tue *-*-* 16:00:00
+# OnCalendar=Wed *-*-* 16:00:00
+# OnCalendar=Thu *-*-* 16:00:00
+# OnCalendar=Fri *-*-* 16:00:00
+Persistent=false
+Unit=guardian.service
+
+[Install]
+WantedBy=timers.target

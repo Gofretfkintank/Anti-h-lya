@@ -1,0 +1,6 @@
+[Unit]
+Description=Guardian schedule diagnostic (dry run)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/guardian.sh
